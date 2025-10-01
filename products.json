@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "category": "رجالي",
+    "name_ar": "قميص قطني",
+    "name_en": "Men's Cotton Shirt",
+    "price": 1999,
+    "img": "product1.svg"
+  },
+  {
+    "id": 2,
+    "category": "نسائي",
+    "name_ar": "فستان أنيق",
+    "name_en": "Elegant Dress",
+    "price": 3499,
+    "img": "product2.svg"
+  },
+  {
+    "id": 3,
+    "category": "أطفال",
+    "name_ar": "تيشيرت أطفال",
+    "name_en": "Kids T-Shirt",
+    "price": 999,
+    "img": "product3.svg"
+  },
+  {
+    "id": 4,
+    "category": "أحذية",
+    "name_ar": "حذاء رياضي",
+    "name_en": "Sneakers",
+    "price": 4599,
+    "img": "product4.svg"
+  },
+  {
+    "id": 5,
+    "category": "إكسسوارات",
+    "name_ar": "ساعة يد",
+    "name_en": "Wrist Watch",
+    "price": 2599,
+    "img": "product5.svg"
+  }
+]

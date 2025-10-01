@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Novashop - اتصل بنا</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-lang="ar">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="assets/logo.svg" alt="Novashop logo"></a>
+      <nav class="main-nav">
+        <a href="index.html" data-i18n="home">الرئيسية</a>
+        <a href="products.html" data-i18n="products">المنتجات</a>
+        <a href="about.html" data-i18n="about">من نحن</a>
+        <a href="contact.html" data-i18n="contact">اتصل بنا</a>
+        <a href="cart.html" class="cart-link" data-i18n="cart">السلة (<span id="cart-count">0</span>)</a>
+        <button id="lang-switch" class="btn small">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1 data-i18n="contact">اتصل بنا</h1>
+    <form id="contact-form" class="form">
+      <label>الاسم الكامل<input type="text" name="name" required></label>
+      <label>رقم الهاتف<input type="tel" name="phone" required></label>
+      <label>الولاية
+        <select id="wilaya-select" name="wilaya">
+          <option value="">اختر الولاية</option>
+        </select>
+      </label>
+      <label>البلدية<input type="text" name="commune"></label>
+      <label>رسالة<textarea name="message"></textarea></label>
+      <div class="form-actions">
+        <button type="submit" class="btn">أرسل</button>
+        <a id="whatsapp-link" class="btn ghost" href="#" target="_blank">واتساب مباشر</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Novashop</p>
+    </div>
+  </footer>
+
+  <script>
+    // populate wilayas
+    const wilayas = ["الجزائر", "وهران", "قسنطينة", "عنابة", "سطيف", "باتنة", "جيجل", "بولقـرائن", "بجاية", "تيبازة", "تيارت", "بشار", "تلمسان", "مسيلة", "سوق أهراس", "خنشلة", "الجلفة", "تبسة", "سعيدة", "وادي سوف", "البليدة", "الرغاية", "المدية", "بومرداس", "الغيــر", "تيزي وزو", "الطارف", "معسكر", "سكيكدة", "أدرار", "غرداية", "أم البواقي", "البويرة", "الشلف", "النعامة", "غليزان", "ومـــاز", "تيـمـيـمـون", "سيدي بلعباس", "القالة", "مستغانم", "السبتة", "تيارت2", "تندوف", "ورقلة", "بسكرة", "خنشلة2"];
+    const sel = document.getElementById('wilaya-select');
+    wilayas.forEach(w => {
+      const o = document.createElement('option'); o.value = w; o.textContent = w; sel.appendChild(o);
+    });
+  </script>
+  <script src="js/app.js"></script>
+</body>
+</html>
